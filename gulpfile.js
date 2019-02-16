@@ -3,13 +3,14 @@ const stylus = require('gulp-stylus');
 var cssmin = require('gulp-cssmin');
 var htmlmin = require('gulp-html-minifier');
 const imagemin = require('gulp-imagemin');
-var htmlmin = require('gulp-html-minifier');
+var plumber = require('gulp-plumber');
 
 gulp.task('one', () => {
     return gulp.src('./src/css/*.styl')
-      .pipe(stylus())
+        .pipe(plumber())
+        .pipe(stylus())
         .pipe(cssmin())
-        .pipe(gulp.dest('./build/css/min'))
+        .pipe(gulp.dest('./build/css'))
 });
  
 gulp.task('minify', () => {
