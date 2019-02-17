@@ -16,7 +16,7 @@ gulp.task('one', () => {
 gulp.task('minify', () => {
     return gulp.src('./src/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('./build/html'))
+        .pipe(gulp.dest('./build'))
 });
 
 gulp.task('imgmin', () => {
