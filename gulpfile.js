@@ -25,8 +25,14 @@ gulp.task('imgmin', () => {
         .pipe(gulp.dest('./build/images'))
 });
 
-gulp.task('watch', () => {
+gulp.task('default', gulp.parallel([
+    'one',
+    'minify',
+    'imgmin'
+]));
+
+gulp.task('watch', gulp.series(['default', () => {
     gulp.watch('./src/css/*.styl', gulp.series(['one']));
     gulp.watch('./src/*.html', gulp.series(['minify']));
     gulp.watch('./src/assets/img/*', gulp.series(['imgmin']));
-});
+}]));

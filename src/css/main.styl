@@ -1,3 +1,308 @@
+*
+    padding 0
+    margin 0
+    font-family "Roboto", Arial, sans-serif;
+    text-decoration none
+
+a
+    color #eee
 .header
     background rgb(9,195,196)
     background radial-gradient(circle, rgba(9,195,196,1) 50%, rgba(11,100,157,1) 100%)
+    height 935px
+
+.header__back
+    background-image url(../images/Nike_back_background.png)
+    background-repeat no-repeat
+    background-size 100% 80%
+    position absolute
+    width 1571px
+    height 672px
+    z-index 0
+    opacity 0.1
+    transform translate(12%, 30%)
+
+.header__front
+    background-image url(../images/shoe.png)
+    background-repeat no-repeat
+    background-size cover
+    position absolute
+    width 1571px
+    height 672px
+
+.header__menu
+    display flex
+    justify-content center
+    align-items center
+    flex-direction row
+
+.menu__items
+    display flex
+    justify-content center
+    width 100%
+    height 206px
+.menu__item 
+    display flex
+    width 50%
+    padding 90px
+
+.nike-icon   
+    justify-content flex-start  
+
+.menu-icon
+    justify-content center
+    flex-direction column
+    align-items flex-end
+
+.menu-icon__item
+    width 26px
+    height 2px
+    margin 1px
+    background-color white
+    margin-bottom 3px
+
+.header__bubble-items
+    width 1571px
+    height 880px
+    position absolute
+    transform translate(11.5%, -8%)
+
+.header__bubble-item
+    border 6px solid #14d0d5
+    border-radius 50%
+    position absolute
+    opacity .4
+
+.header__bubble-item:nth-child(1)
+    width 10px
+    height 10px
+    top 5%
+    left 6%
+
+.header__bubble-item:nth-child(2)
+    width 102px
+    height 102px
+    top -10%
+    right 15%
+
+.header__bubble-item:nth-child(3)
+    border 4px solid #14d0d5
+    width 7px
+    height 7px
+    top 8%
+    left 45%
+        
+.header__bubble-item:nth-child(4)
+    border 4px solid #14d0d5
+    width 9px
+    height 9px
+    top 2%
+    right 45%
+
+.header__bubble-item:nth-child(5)
+    border 4px solid #14d0d5
+    width 7px
+    height 7px
+    bottom 30%
+    left 30%
+
+.header__bubble-item:nth-child(6)
+    border 2px solid #14d0d5
+    width 6px
+    height 6px
+    top 4%
+    left 35%
+
+.header__bubble-item:nth-child(7)
+    border 2px solid #14d0d5
+    width 4px
+    height 4px
+    top 6%
+    right 68%
+
+.header__bubble-item:nth-child(8)
+    width 102px
+    height 102px
+    bottom 17%
+    left 5%
+
+.header__bubble-item:nth-child(9)
+    width 10px
+    height 10px
+    bottom 15%
+    right 20%
+
+.header__bubble-item:nth-child(10)
+    border 2px solid #14d0d5
+    width 4px
+    height 4px
+    top 49%
+    right 50%
+
+.header__board 
+    display flex
+    justify-content center
+    align-items center
+    flex-direction column
+    width 490px
+    height 320px
+    position relative
+    right -200px
+
+.header__board_text
+    width 405px
+    height 145px
+    display flex
+    align-items center
+    justify-content center
+    margin 50px
+    font-size 40px
+    color #00fffc
+
+.header__board_buttons
+    display flex
+    flex-direction row
+
+.header__board_button
+    width 200px
+    height 48px
+    border-radius 50px 50px
+    display flex
+    align-items center
+    justify-content center
+    text-transform uppercase
+    font-size 14px
+    box-shadow 0px 18px 30px 0px rgba(122, 92, 126, 0.12)
+
+.header__board_button_left
+    border 2px solid #4bf1f6
+    margin-right 30px
+    background-color #00fffc
+
+.header__board_button_right
+    border 2px solid #eee
+
+.header__boots
+    position absolute
+    top 5%
+    left 125%
+
+.banner
+    background-image url(../images/banner_2.png)
+    background-repeat no-repeat
+    background-size cover
+    height 1550px
+    width 100%
+    position absolute
+    top 60%
+
+.banner__boots
+    background-image url(../images/banner_boots.png)
+    background-repeat no-repeat
+    background-size cover
+    width 725px
+    height 625px
+    position absolute
+    top 25%
+    right 25%
+
+.banner__button-container
+    width 205px
+    height 53px
+    position absolute
+    bottom 25%
+    left 15%
+    display flex
+    justify-content center
+    align-items center
+
+.banner__bubble
+    border-radius 50%
+    border 2px solid #e5f8fe
+    position absolute
+    
+.banner__bubble-1
+    height 55px
+    width 55px
+    bottom 27%
+    left 16.5%
+
+.banner__bubble-2
+    height 31px
+    width 31px
+    top 35%
+    right 30%
+
+.banner__bubble-3
+    height 31px
+    width 31px
+    bottom 23%
+    left 28%
+
+.banner__bubble-4
+    height 16px
+    width 16px
+    bottom 30%
+    left 28.2%
+
+.banner__button
+    width 200px
+    height 48px
+    border-radius 50px
+    display flex
+    align-items center
+    justify-content center
+    font-size 14px
+    border 2px solid #4bf1f6
+    background-color #00ecf4
+    text-transform uppercase
+    box-shadow 0px 18px 30px 0px rgba(122, 92, 126, 0.12)
+
+.banner__function
+    display flex
+    justify-content center
+    align-items center
+    width 240px
+    height 40px
+    color #00dfee
+    font-size 20px
+    position absolute 
+
+.banner__function-1
+    top 24%
+    right 20%
+
+.banner__function-2
+    top 32%
+    left 14%
+
+.banner__function-3
+    top 40%
+    right 10%
+
+.banner__dotted-line
+    position absolute
+    background-repeat no-repeat 
+    background-size cover
+
+.banner__dotted-line-1
+    width 350px
+    height 230px
+    top 25%
+    right 26%
+    background-image url(../images/dotted_line_1.png)
+    
+
+.banner__dotted-line-2
+    width 400px
+    height 150px
+    top 35%
+    left 19%
+    background-image url(../images/dotted_line_2.png)
+
+.banner__dotted-line-3
+    width 360px
+    height 330px
+    top 42%
+    right 13%
+    background-image url(../images/dotted_line_3.png)
