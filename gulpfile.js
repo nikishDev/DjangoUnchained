@@ -20,7 +20,7 @@ gulp.task('minify', () => {
 });
 
 gulp.task('imgmin', () => {
-    return gulp.src('./src/assets/img/*')
+    return gulp.src('./src/assets/images/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./build/images'))
 });
