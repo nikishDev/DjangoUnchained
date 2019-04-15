@@ -11,62 +11,68 @@ a
     background rgb(9,195,196)
     background radial-gradient(circle, rgba(9,195,196,1) 50%, rgba(11,100,157,1) 100%)
     height 935px
+    width 100%
+    display flex
+    justify-content center
+    align-items center
+
+.header_container
+    margin 0 auto
+    width 1602px
 
 .header__back
     background-image url(../images/Nike_back_background.png)
     background-repeat no-repeat
     background-size 100% 80%
+    margin 0 auto
     position absolute
-    width 1571px
-    height 672px
+    width 1552px
+    height 452px
     z-index 0
     opacity 0.1
-    transform translate(12%, 30%)
-
-.header__front
-    background-image url(../images/shoe.png)
-    background-repeat no-repeat
-    background-size cover
-    position absolute
-    width 1571px
-    height 672px
+    transform translate(-2%,-36%)
 
 .header__menu
     display flex
     justify-content center
     align-items center
     flex-direction row
+    position absolute
+    width 1552px
+    
 
 .menu__items
     display flex
     justify-content center
     width 100%
-    height 206px
+    height 26px
+
 .menu__item 
     display flex
     width 50%
-    padding 90px
+    height 30px
 
 .nike-icon   
-    justify-content flex-start  
+    justify-content flex-start
 
 .menu-icon
-    justify-content center
+    justify-content space-between
     flex-direction column
     align-items flex-end
+    position absolute
+    top 10%
+
 
 .menu-icon__item
-    width 26px
-    height 2px
-    margin 1px
+    width 31px
+    height 3px
     background-color white
-    margin-bottom 3px
 
 .header__bubble-items
     width 1571px
     height 880px
     position absolute
-    transform translate(11.5%, -8%)
+    transform translate(0%, -35%)
 
 .header__bubble-item
     border 6px solid #14d0d5
@@ -147,11 +153,11 @@ a
     flex-direction column
     width 490px
     height 320px
-    position relative
-    right -200px
+    position absolute
+    transform translate(25%,-55%)
 
 .header__board_text
-    width 405px
+    width 440px
     height 145px
     display flex
     align-items center
@@ -163,6 +169,7 @@ a
 .header__board_buttons
     display flex
     flex-direction row
+    margin-top: 60px
 
 .header__board_button
     width 200px
@@ -185,12 +192,12 @@ a
 
 .header__boots
     position absolute
-    top 5%
-    left 125%
+    max-width 820px
+    transform translate(80%,-44%)
 
 .banner
     z-index 2
-    background-image url(../images/banner_2.png)
+    background-image url(../images/banner.png)
     background-repeat no-repeat
     background-size cover
     height 1550px
