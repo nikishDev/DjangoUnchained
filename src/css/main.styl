@@ -3,16 +3,18 @@
     margin 0
     font-family "Roboto", Arial, sans-serif;
     text-decoration none
+
 body, html
     width 100%
+
 a
     color #eee
 
 .header
-    background rgb(9,195,196)
     background radial-gradient(circle, rgba(9,195,196,1) 50%, rgba(11,100,157,1) 100%)
     height 935px
-    width 100%
+    max-width 2475px
+    margin auto
     display flex
     justify-content center
     align-items center
@@ -20,35 +22,40 @@ a
 .header_container
     margin 0 auto
     width 1602px
+    max-width 100%
     height 1000px
     position relative
 
 .header__back
     background-image url(../images/Nike_back_background.png)
     background-repeat no-repeat
-    background-size cover
+    background-size contain
     margin 0 auto
     position absolute
-    width 1552px
+    width 100%
+    max-width 1552px
     height 452px
     opacity 0.1
     transform translate(1.5%,50%)
+    display flex
 
 .header__menu
-    position absolute
-    max-width 1370px
+    position absolute   
     transform translate(-50%, 0%)
     left 50%
     top 60px
+    max-width 1370px
+    width 100%
     height 100px
     display flex
     align-items center
-    z-index 1
+    flex-wrap wrap
 
 .menu__items
     display flex
-    width 1552px
+    width 1350px
     height 28px
+    flex-wrap wrap
 
 .menu__item 
     display flex
@@ -57,6 +64,7 @@ a
 
 .nike-icon
     align-items flex-start
+    width 50%
 
 .menu-icon
     justify-content space-around
@@ -152,10 +160,13 @@ a
     justify-content center
     align-items center
     flex-direction column
-    width 490px
-    height 320px
+    width 440px
+    height 280px
     position absolute
-    transform translate(25%,70%)
+    transform translate(25%,50%)
+    top 180px
+    left 100px
+    max-width
 
 .header__board_text
     width 440px
@@ -163,14 +174,14 @@ a
     display flex
     align-items center
     justify-content center
-    margin 40px
+    margin 0 auto
     font-size 40px
     color #00fffc
 
 .header__board_buttons
     display flex
     flex-direction row
-    margin-top: 60px
+    margin-top 60px
 
 .header__board_button
     width 200px
@@ -182,47 +193,54 @@ a
     text-transform uppercase
     font-size 14px
     box-shadow 0px 18px 30px 0px rgba(122, 92, 126, 0.12)
-    transition font-size ease .6s
-
-.header__board_button:hover
-    font-size 28px
-    width 300px
-    height 48px
-
-.header__board_button_right:hover
-    background-color #0bda51
-
-.header__board_button_left
     border 2px solid #4bf1f6
-    margin-right 30px
+    transition 0.8s
+
+.header__board_button:hover 
+    -webkit-transform scale(1.2)
     background-color #00fffc
 
-.header__board_button_right
-    border 2px solid #eee
+.header__board_button_left
+    margin-right 30px
 
 .header__boots
     position absolute
     max-width 820px
+    max-height 620px
+    width 60%
+    height 60%
     top 15%
-    right 8%
+    right 0%
+
+.header__boots-img
+    max-width 100%
+    max-height 100%
 
 .banner
-    z-index 2
     background-image url(../images/banner.png)
-    background-repeat repeat
-    background-size cover
-    height 1250px
+    background-repeat no-repeat
+    background-size contain
+    height 1970px
     width 100%
-    max-width 2000px
+    max-width 2475px
     position relative
-    margin -300px auto
+    margin -350px auto
+    z-index 2
+
+.banner__container
+    width 1602px
+
+.banner__boots-img
+    max-width 100%
+    max-height 100%
 
 .banner__boots
-    background-image url(../images/banner_boots.png)
     background-repeat no-repeat
-    background-size cover
-    width 725px
-    height 625px
+    background-size contain
+    max-width 725px
+    max-height 625px
+    width 60%
+    height 60%
     position absolute
     top 25%
     right 25%
@@ -231,7 +249,7 @@ a
     width 205px
     height 53px
     position absolute
-    bottom 25%
+    bottom 35%
     left 15%
     display flex
     justify-content center
@@ -245,25 +263,25 @@ a
 .banner__bubble-1
     height 55px
     width 55px
-    bottom 27%
+    bottom 37%
     left 16.5%
 
 .banner__bubble-2
     height 31px
     width 31px
-    top 35%
+    top 25%
     right 30%
 
 .banner__bubble-3
     height 31px
     width 31px
-    bottom 23%
+    bottom 33%
     left 28%
 
 .banner__bubble-4
     height 16px
     width 16px
-    bottom 30%
+    bottom 40%
     left 28.2%
 
 .banner__button
@@ -278,6 +296,20 @@ a
     background-color #00ecf4
     text-transform uppercase
     box-shadow 0px 18px 30px 0px rgba(122, 92, 126, 0.12)
+    transition 0.8s
+
+.banner__button:hover 
+    -webkit-transform scale(1.2)
+    background-color #00fffc
+
+.banner__cotainer-boots
+    margin auto
+    position relative
+    transform translate(50%, 10%)
+    top 100px
+    right 50px
+    height 1000px
+    width 1200px
 
 .banner__function
     display flex
@@ -290,48 +322,49 @@ a
     position absolute 
 
 .banner__function-1
-    top 24%
-    right 20%
+    top 20%
+    right 15%
 
 .banner__function-2
-    top 32%
-    left 14%
+    top 39%
+    left -10%
 
 .banner__function-3
-    top 40%
-    right 10%
+    top 43%
+    right -1%
 
 .banner__dotted-line
     position absolute
     background-repeat no-repeat 
-    background-size cover
+    background-size contain
+    width 20%
+    height 20%
 
 .banner__dotted-line-1
-    width 350px
-    height 230px
-    top 25%
-    right 26%
+    max-width 350px
+    max-height 230px
+    top 23%
+    right 25%
     background-image url(../images/dotted_line_1.png)
-    
 
 .banner__dotted-line-2
     width 400px
     height 150px
-    top 35%
-    left 19%
+    top 40%
+    left -3%
     background-image url(../images/dotted_line_2.png)
 
 .banner__dotted-line-3
     width 360px
     height 330px
-    top 42%
-    right 13%
+    top 47%
+    right 5%
     background-image url(../images/dotted_line_3.png)
 
 .banner__rectangle
     position absolute
     background-repeat no-repeat 
-    background-size cover
+    background-size contain
 
 .banner__rectangle-1
     width 71px
@@ -368,8 +401,9 @@ a
     background-image url(../images/BG_the_way.png)
     background-size cover
     background-repeat no-repeat
-    position absolute
+    position relative
     top 150%
+    margin -450px auto
     
 .b-like__image
     position absolute
